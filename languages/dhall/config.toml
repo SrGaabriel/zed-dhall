@@ -1,0 +1,13 @@
+name = "Dhall"
+grammar = "dhall"
+path_suffixes = ["dhall"]
+line_comments = ["-- "]
+block_comments = ["{-", "-}"]
+autoclose_before = ",=)]}"
+tab_size = 2
+brackets = [
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "{", end = "}", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false },
+]

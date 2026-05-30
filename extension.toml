@@ -1,0 +1,20 @@
+id = "dhall"
+name = "Dhall"
+description = "Dhall support for Zed"
+version = "0.1.0"
+schema_version = 1
+authors = ["Gabriel <gabriel@minatel.dev>"]
+repository = "https://github.com/SrGaabriel/zed-dhall"
+
+[language_servers.dhall-lsp-server]
+name = "Dhall LSP Server"
+languages = ["Dhall"]
+
+[grammars.dhall]
+repository = "https://github.com/jbellerb/tree-sitter-dhall"
+rev = "62013259b26ac210d5de1abf64cf1b047ef88000"
+
+[[capabilities]]
+kind = "process:exec"
+command = "*"
+args = ["**"]
